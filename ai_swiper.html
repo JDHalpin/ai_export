@@ -8,24 +8,6 @@
   <!-- Link Swiper's CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
 
-<!-- new example 01 styles -->
-<style>
-.swiper-slide div {
-  padding: 0 15px;
-  text-align: center;
-}
-
-.swiper-slide span {
-  display: block;
-  border: 1px solid #000;
-  padding: 100px 20px;
-}
-
-.swiper-slide span img {
-  height: 80px;
-}
-</style>
-
   <!-- Demo styles -->
 
   <style>
@@ -50,6 +32,9 @@
       text-align: center;
       font-size: 18px;
       background: #fff;
+      background-repeat:no-repeat;
+      background-size:contain;
+      background-position:center;
 
       /* Center slide text vertically */
       display: -webkit-box;
@@ -64,6 +49,7 @@
       -ms-flex-align: center;
       -webkit-align-items: center;
       align-items: center;
+
     }
   </style>
 </head>
@@ -71,33 +57,52 @@
   <!-- Swiper -->
   <div class="swiper-container">
     <div class="swiper-wrapper">
-      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/01_rw_02.jpg)">Slide 1</div>
-      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/02_jo_koy_01.jpg)">Slide 2</div>
-      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/03_jim_jeff_02.jpg)">Slide 3</div>
-      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/04_underoath_02.jpg)">Slide 4</div>
-      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/05_jim_norton_01.jpg)">Slide 5</div>
-      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/06_jokers_tour_01.jpg)">Slide 6</div>
-      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/08_kevin_hart_03.jpg)">Slide 7</div>
-      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/11_kurt_02.jpg)">Slide 8</div>
-      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/09_underoath_01.jpg)">Slide 9</div>
-      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/10_rw_01.jpg)">Slide 10</div>
-      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/12_jokers_tour_02.jpg)">Slide 11</div>
-      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/22_HMHK.jpg)">Slide 12</div>
-      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/15_bill_burr_01.jpg)">Slide 13</div>
-      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/16_bts_interview.jpg)">Slide 14</div>
-      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/18_jo_koy_02.jpg)">Slide 15</div>
-      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/21_kurt_01.jpg)">Slide 16</div>
-      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/16_cho_01.jpg)">Slide 17</div>
-      <!--<div class="swiper-slide" style="background-image:url()">Slide 18</div>
-      <div class="swiper-slide" style="background-image:url()">Slide 19</div>
-      -->
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/01_j_jeffries_in_chair.jpg)">01</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/02_warped_b&w_m_bun.jpg)">02</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/03_k_hart_hand_raised.jpg)">03</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/04_jokers_bus_shot.jpg)">04</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/05_m_cho_long_shot.jpg)">05</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/06_j_oliver_laughing.jpg)">06</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/07_roy_wood_holding_baby.jpg)">07</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/08_j_norton_arm_out.jpg)">08</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/09_warped_b&w_guitar.jpg)">09</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/10_jokers_group_shot_from_back.jpg)">10</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/11_tommy_pointing.jpg)">11</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/12_k_hart_holding_baby.jpg)">12</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/13_j_oliver_mic.jpg)">13</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/14_j_jeffries_lights_above.jpg)">14</div>
+      <<div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/15_jokers_guy_laughing.jpg">15</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/16_warped_b&w_sleeveless.jpg)">16</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/17_j_oliver_guy_chair.jpg)">17</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/18_k_hart_smiling.jpg)">18</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/19_louie_hand_out.jpg)">19</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/20_roy_wood_hand_out.jpg)">20</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/21_warped_fishbone_singer.jpg)">21</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/22_jokers_marquee_shot.jpg)">22</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/23_tommy_arms_out.jpg)">23</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/24_roy_wood_pointing.jpg)">24</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/25_j_norton_fist_down.jpg)">25</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/26_jokers_group_shot_blk_bg.jpg)">26</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/27_j_oliver_standing.jpg)">27</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/28_warped_purple_shirt.jpg)">28</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/29_kevin_hart_pointing.jpg)">29</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/30_jokers_two_shot.jpg)">30</div>
+      <!--<div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/#)">31</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/#)">32</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/#)">33</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/#)">34</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/#)">35</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/#)">36</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/#)">37</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/#)">38</div>
+      <div class="swiper-slide" style="background-image:url(http://artandindustryinc.com/test/slideshow/#)">39</div> -->
 
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
     <!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+    <!-- <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>-->
   </div>
 
   <!-- Swiper JS -->
