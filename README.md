@@ -4,3 +4,4 @@ Working repository for art & industry updates <br>
 Updating swiper functionality for index page <br>
 Documenting revisions for js / json packages as needed <br>
 /ai_swiper.html<br>
+aws . amazon . com / lambda<br>
